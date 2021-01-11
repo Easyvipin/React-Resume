@@ -1,0 +1,16 @@
+@import "./typography.scss";
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./themes.scss";
+@import "./layout.scss";
+@import "./components.scss";
+
+/* body */
+body {
+  margin: 0;
+  padding: 0;
+
+  background: #e0e0e0;
+}
+
+/* app */

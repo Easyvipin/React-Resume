@@ -1,0 +1,18 @@
+.App {
+  box-sizing: border-box;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.sideBar,
+.mainBar {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  border: 2px solid black;
+  padding: 2rem 2rem;
+}
+.sideBar {
+  text-align: center;
+}
