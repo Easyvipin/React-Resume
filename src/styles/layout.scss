@@ -3,6 +3,9 @@
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 4fr;
+  @include respond-to("large") {
+    grid-template-columns: 4fr;
+  }
 }
 
 .sideBar,
@@ -13,6 +16,70 @@
   border: 2px solid black;
   padding: 2rem 2rem;
 }
+
+/* sidebar */
 .sideBar {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(211, 207, 207);
+  .profile {
+    .profile-img {
+      width: 8vw;
+      height: 8vw;
+    }
+  }
+  .navbar {
+    ul {
+      padding: 0;
+    }
+    ul li {
+      font-family: $open;
+      font-size: 18px;
+      list-style: none;
+      margin-top: 10px;
+    }
+    ul li a {
+      text-decoration: none;
+    }
+  }
+  .Social {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+    }
+    .social-one {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      box-sizing: border-box;
+      align-self: center;
+      color: black;
+      padding: 8px 8px;
+      border: 2px solid black;
+      border-radius: 5px;
+    }
+    .other-social {
+      ul {
+        padding: 0;
+      }
+      ul li {
+        font-family: $open;
+        font-size: 25px;
+        list-style: none;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  /* responsive breakpoint */
+  @include respond-to("large") {
+    display: none;
+  }
 }
