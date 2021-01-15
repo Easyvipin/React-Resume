@@ -13,7 +13,7 @@
   box-sizing: border-box;
   height: 100%;
   width: 100%;
-  border: 2px solid black;
+
   padding: 2rem 2rem;
 }
 
@@ -23,11 +23,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: rgb(211, 207, 207);
+  background-color: $lightbg4;
   .profile {
+    h4 {
+      font-size: 25px;
+      font-family: $sail !important;
+    }
     .profile-img {
       width: 8vw;
       height: 8vw;
+      border-radius: 50%;
+      box-shadow: 0px 0px 20px $subHead;
     }
   }
   .navbar {
@@ -42,6 +48,7 @@
     }
     ul li a {
       text-decoration: none;
+      color: $navLinks;
     }
   }
   .Social {
@@ -62,7 +69,7 @@
       align-self: center;
       color: black;
       padding: 8px 8px;
-      border: 2px solid black;
+      box-shadow: 9px 9px 25px #6c6c6c, -9px -9px 25px #ffffff;
       border-radius: 5px;
     }
     .other-social {
