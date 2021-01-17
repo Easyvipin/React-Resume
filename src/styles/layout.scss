@@ -1,4 +1,4 @@
-.App {
+.content {
   box-sizing: border-box;
   height: 100vh;
   display: grid;
@@ -7,7 +7,6 @@
     grid-template-columns: 4fr;
   }
 }
-
 .sideBar,
 .mainBar {
   box-sizing: border-box;
@@ -88,5 +87,70 @@
   /* responsive breakpoint */
   @include respond-to("large") {
     display: none;
+  }
+}
+
+/* intro */
+.intro {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  .content-intro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .videoBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .intro-wish {
+    position: absolute;
+    display: inline-block;
+    top: 40%;
+    left: 40%;
+    font-size: 2vw;
+    font-family: $open;
+    font-weight: $monster500;
+    color: rgb(186, 172, 172);
+    transform: scale(0);
+  }
+  .name {
+    display: inline-block;
+    font-size: 16vw;
+    font-family: $abril;
+    font-weight: $monster500;
+    color: rgb(186, 172, 172);
+  }
+  h2 {
+    margin-top: 20px;
+    color: rgb(224, 217, 217);
+  }
+  .next {
+    position: absolute;
+    top: 68%;
+    right: 10%;
+    font-size: 80px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: whitesmoke;
+    color: rgb(224, 217, 217);
   }
 }
